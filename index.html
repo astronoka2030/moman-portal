@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>モーマンタイム 便利ツール</title>
+    <title>モーマンタイム ツール集</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1Z9NHRJ19"></script>
@@ -54,14 +54,12 @@
     </header>
 
     <!-- 2x2 グリッドコンテナ -->
-    <!-- max-w-md でPCで見てもボタンが大きくなりすぎないように制限 -->
     <main class="w-full max-w-lg mx-auto">
         <div class="grid grid-cols-2 gap-4 sm:gap-6">
             
             <!-- ボタン1: 同盟対決ポイント計算機 -->
             <a href="https://astronoka2030.github.io/moman-calc/" target="_blank" rel="noopener noreferrer" 
                class="tool-button aspect-square flex flex-col items-center justify-center p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-blue-500/50 group text-center no-underline relative overflow-hidden">
-                <!-- 装飾用の光彩 -->
                 <div class="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div class="relative z-10">
                     <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 text-blue-400 group-hover:text-blue-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
@@ -71,14 +69,14 @@
                 </div>
             </a>
 
-            <!-- ボタン2: アプデ内容 -->
-            <a href="https://astronoka2030.github.io/moman-update2026-10-16/" target="_blank" rel="noopener noreferrer" 
-               class="tool-button aspect-square flex flex-col items-center justify-center p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-emerald-500/50 group text-center no-underline relative overflow-hidden">
-                <div class="absolute inset-0 bg-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <!-- ボタン2: 輸送部隊レベル別報酬一覧 (NEW!) -->
+            <a href="https://astronoka2030.github.io/moman-yuso/" target="_blank" rel="noopener noreferrer" 
+               class="tool-button aspect-square flex flex-col items-center justify-center p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-cyan-500/50 group text-center no-underline relative overflow-hidden">
+                <div class="absolute inset-0 bg-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div class="relative z-10">
-                    <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 text-emerald-400 group-hover:text-emerald-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                    <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 text-cyan-400 group-hover:text-cyan-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
                     <span class="text-base sm:text-lg md:text-xl font-bold leading-tight text-slate-200 group-hover:text-white">
-                        アプデ内容<br><span class="text-sm sm:text-base text-emerald-400/80 group-hover:text-emerald-300 mt-1 block">2026/10/16</span>
+                        輸送部隊<br><span class="text-sm sm:text-base text-cyan-400/80 group-hover:text-cyan-300 mt-1 block">レベル別報酬一覧</span>
                     </span>
                 </div>
             </a>
@@ -107,12 +105,24 @@
                 </div>
             </a>
 
+            <!-- ボタン5: アプデ内容 (下に移動) -->
+            <a href="https://astronoka2030.github.io/moman-update2026-10-16/" target="_blank" rel="noopener noreferrer" 
+               class="tool-button aspect-square flex flex-col items-center justify-center p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-emerald-500/50 group text-center no-underline relative overflow-hidden">
+                <div class="absolute inset-0 bg-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="relative z-10">
+                    <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 text-emerald-400 group-hover:text-emerald-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                    <span class="text-base sm:text-lg md:text-xl font-bold leading-tight text-slate-200 group-hover:text-white">
+                        アプデ内容<br><span class="text-sm sm:text-base text-emerald-400/80 group-hover:text-emerald-300 mt-1 block">2026/10/16</span>
+                    </span>
+                </div>
+            </a>
+
         </div>
     </main>
 
     <!-- フッター -->
     <footer class="mt-16 text-center text-slate-500 text-sm">
-        <p>&copy; 2026 モーマンタイム 便利ツール</p>
+        <p>&copy; 2026 Moman-Time Archive</p>
     </footer>
 
 </body>
