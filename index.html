@@ -30,7 +30,7 @@
             background-attachment: fixed;
         }
 
-        /* 装飾ライン（幅を広げました） */
+        /* 装飾ライン */
         .hero-rule { 
             width: min(350px, 80%); 
             height: 1px; 
@@ -65,10 +65,10 @@
         
         <!-- 装飾ライン -->
         <div class="hero-rule"></div>
-
+        <!-- 不要になった説明文の段落は削除済み -->
     </header>
 
-    <!-- 2x2 グリッドコンテナ -->
+    <!-- 2x3 グリッドコンテナ（ちょうど6個でぴったり！） -->
     <main class="w-full max-w-lg mx-auto">
         <div class="grid grid-cols-2 gap-4 sm:gap-6">
             
@@ -120,7 +120,19 @@
                 </div>
             </a>
 
-            <!-- ボタン5: アプデ内容 -->
+            <!-- ボタン5: 富貴栄華 データベース (NEW!) -->
+            <a href="https://astronoka2030.github.io/moman-fukieika/" target="_blank" rel="noopener noreferrer" 
+               class="tool-button aspect-square flex flex-col items-center justify-center p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-yellow-500/50 group text-center no-underline relative overflow-hidden">
+                <div class="absolute inset-0 bg-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="relative z-10">
+                    <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 text-yellow-400 group-hover:text-yellow-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-base sm:text-lg md:text-xl font-bold leading-tight text-slate-200 group-hover:text-white">
+                        富貴栄華<br>データベース
+                    </span>
+                </div>
+            </a>
+
+            <!-- ボタン6: アプデ内容 -->
             <a href="https://astronoka2030.github.io/moman-update2026-10-16/" target="_blank" rel="noopener noreferrer" 
                class="tool-button aspect-square flex flex-col items-center justify-center p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-emerald-500/50 group text-center no-underline relative overflow-hidden">
                 <div class="absolute inset-0 bg-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -140,7 +152,7 @@
         <p class="font-bold text-slate-400 tracking-wider">Moman-Time Archive</p>
         <p class="mt-2 text-xs flex items-center justify-center gap-1.5 opacity-80">
             <span>Crafted by</span>
-            <span class="font-semibold text-blue-400">あすとろ</span>
+            <span class="font-semibold text-blue-400">Astro</span>
             <span class="text-base">🚀</span>
         </p>
     </footer>
