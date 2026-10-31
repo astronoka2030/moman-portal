@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>モーマンタイム ツール集</title>
+    <title>モーマンタイム 便利ツール</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1Z9NHRJ19"></script>
@@ -18,7 +18,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* カスタムフォントとベーススタイル */
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+        /* RocknRoll One をタイトル用に新しく追加 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=RocknRoll+One&display=swap');
         
         body {
             font-family: 'Noto Sans JP', sans-serif;
@@ -28,6 +29,19 @@
                 radial-gradient(at 50% 0%, hsla(225,39%,30%,0.2) 0, transparent 50%), 
                 radial-gradient(at 100% 0%, hsla(339,49%,30%,0.2) 0, transparent 50%);
             background-attachment: fixed;
+        }
+
+        /* ご指定の装飾ライン */
+        .hero-rule { 
+            width: min(200px, 50%); 
+            height: 1px; 
+            margin: 12px auto 16px; /* 下部余白を少し調整しました */
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,0.3),
+                transparent
+            ); 
         }
 
         /* ボタンのホバーエフェクト用 */
@@ -45,10 +59,15 @@
 
     <!-- ヘッダー部分 -->
     <header class="mb-12 text-center">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 drop-shadow-sm mb-4">
+        <!-- タイトルに RocknRoll One フォントを適用し、文字間隔を広げてかっこよく -->
+        <h1 class="text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 drop-shadow-md tracking-wider" style="font-family: 'RocknRoll One', sans-serif;">
             モーマンタイム<br class="sm:hidden" /> 便利ツール
         </h1>
-        <p class="text-slate-400 text-sm md:text-base font-medium">
+        
+        <!-- 追加した装飾ライン -->
+        <div class="hero-rule"></div>
+
+        <p class="text-slate-400 text-sm md:text-base font-medium mt-4">
             各ツールへ素早くアクセスできます
         </p>
     </header>
@@ -69,14 +88,14 @@
                 </div>
             </a>
 
-            <!-- ボタン2: 輸送部隊レベル別報酬一覧 (NEW!) -->
+            <!-- ボタン2: 輸送部隊レベル別報酬一覧 -->
             <a href="https://astronoka2030.github.io/moman-yuso/" target="_blank" rel="noopener noreferrer" 
                class="tool-button aspect-square flex flex-col items-center justify-center p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-cyan-500/50 group text-center no-underline relative overflow-hidden">
                 <div class="absolute inset-0 bg-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div class="relative z-10">
                     <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 text-cyan-400 group-hover:text-cyan-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
                     <span class="text-base sm:text-lg md:text-xl font-bold leading-tight text-slate-200 group-hover:text-white">
-                        輸送部隊<br><span class="text-sm sm:text-base text-cyan-400/80 group-hover:text-cyan-300 mt-1 block">レベル別報酬一覧</span>
+                        輸送部隊<br>レベル別報酬一覧
                     </span>
                 </div>
             </a>
@@ -105,7 +124,7 @@
                 </div>
             </a>
 
-            <!-- ボタン5: アプデ内容 (下に移動) -->
+            <!-- ボタン5: アプデ内容 -->
             <a href="https://astronoka2030.github.io/moman-update2026-10-16/" target="_blank" rel="noopener noreferrer" 
                class="tool-button aspect-square flex flex-col items-center justify-center p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-emerald-500/50 group text-center no-underline relative overflow-hidden">
                 <div class="absolute inset-0 bg-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -122,7 +141,12 @@
 
     <!-- フッター -->
     <footer class="mt-16 text-center text-slate-500 text-sm">
-        <p>&copy; 2026 Moman-Time Archive</p>
+        <p class="font-bold text-slate-400 tracking-wider">Moman-Time Archive</p>
+        <p class="mt-2 text-xs flex items-center justify-center gap-1.5 opacity-80">
+            <span>Crafted by</span>
+            <span class="font-semibold text-blue-400">Astro</span>
+            <span class="text-base">🚀</span>
+        </p>
     </footer>
 
 </body>
